@@ -45,16 +45,25 @@ final class AnalyticsManager {
 }
 
 struct AnalyticsSwiftUIView: View {
+    
     var body: some View {
-        VStack(alignment: .center, spacing: 40) {
-            Button("Click me") {
-                AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_ButtonClick")
-            }
-            
-            Button("Click me too") {
-                AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_SecondClick", params: [
-                    "screen_title" : "Hello World"
-                ])
+        NavigationView {
+            VStack(alignment: .center, spacing: 40) {
+                Button("Click me") {
+                    AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_ButtonClick")
+                }
+                
+                Button("Click me too") {
+                    AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_SecondClick", params: [
+                        "screen_title" : "Hello World"
+                    ])
+                }
+                
+          
+                
+                NavigationLink(destination: NewsScreenView()) {
+                    Text("Go to News")
+                }
             }
         }
         .analyticsScreen(name: "AnalyticsSwiftUIView")

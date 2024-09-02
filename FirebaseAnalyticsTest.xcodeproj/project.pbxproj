@@ -37,6 +37,9 @@
 		ACC496CB2C85BB1300EAA344 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = ACC496CA2C85BB1300EAA344 /* FirebaseVertexAI-Preview */; };
 		ACC496CF2C85DB5800EAA344 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC496CE2C85DB5800EAA344 /* AdSupport.framework */; };
 		ACC496D12C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC496D02C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift */; };
+		ACC496D42C8602FC00EAA344 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC496D32C8602FC00EAA344 /* NewsItem.swift */; };
+		ACC496D62C86031400EAA344 /* NewsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC496D52C86031400EAA344 /* NewsScreenView.swift */; };
+		ACC496D82C86035800EAA344 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC496D72C86035800EAA344 /* NewsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		ACC4969B2C85AFEE00EAA344 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACC496CE2C85DB5800EAA344 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		ACC496D02C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSwiftUIView.swift; sourceTree = "<group>"; };
+		ACC496D32C8602FC00EAA344 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		ACC496D52C86031400EAA344 /* NewsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreenView.swift; sourceTree = "<group>"; };
+		ACC496D72C86035800EAA344 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		ACAAEE402C85A93C00A27DF1 /* FirebaseAnalyticsTest */ = {
 			isa = PBXGroup;
 			children = (
+				ACC496D22C8602F000EAA344 /*  News */,
 				ACC496CC2C85DAE400EAA344 /* Analytics */,
 				ACAAEE412C85A93C00A27DF1 /* FirebaseAnalyticsTestApp.swift */,
 				ACAAEE432C85A93C00A27DF1 /* ContentView.swift */,
@@ -137,6 +144,16 @@
 				ACC496CE2C85DB5800EAA344 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACC496D22C8602F000EAA344 /*  News */ = {
+			isa = PBXGroup;
+			children = (
+				ACC496D32C8602FC00EAA344 /* NewsItem.swift */,
+				ACC496D52C86031400EAA344 /* NewsScreenView.swift */,
+				ACC496D72C86035800EAA344 /* NewsDetailView.swift */,
+			);
+			path = " News";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAAEE442C85A93C00A27DF1 /* ContentView.swift in Sources */,
+				ACC496D62C86031400EAA344 /* NewsScreenView.swift in Sources */,
+				ACC496D42C8602FC00EAA344 /* NewsItem.swift in Sources */,
 				ACAAEE422C85A93C00A27DF1 /* FirebaseAnalyticsTestApp.swift in Sources */,
+				ACC496D82C86035800EAA344 /* NewsDetailView.swift in Sources */,
 				ACC496D12C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
