@@ -35,6 +35,8 @@
 		ACC496C72C85BB1300EAA344 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ACC496C62C85BB1300EAA344 /* FirebaseStorage */; };
 		ACC496C92C85BB1300EAA344 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ACC496C82C85BB1300EAA344 /* FirebaseStorageCombine-Community */; };
 		ACC496CB2C85BB1300EAA344 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = ACC496CA2C85BB1300EAA344 /* FirebaseVertexAI-Preview */; };
+		ACC496CF2C85DB5800EAA344 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC496CE2C85DB5800EAA344 /* AdSupport.framework */; };
+		ACC496D12C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC496D02C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		ACAAEE452C85A93D00A27DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACAAEE482C85A93D00A27DF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACC4969B2C85AFEE00EAA344 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACC496CE2C85DB5800EAA344 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		ACC496D02C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				ACC496B72C85BB1300EAA344 /* FirebaseFunctions in Frameworks */,
 				ACC496BD2C85BB1300EAA344 /* FirebaseInstallations in Frameworks */,
 				ACC496C32C85BB1300EAA344 /* FirebasePerformance in Frameworks */,
+				ACC496CF2C85DB5800EAA344 /* AdSupport.framework in Frameworks */,
 				ACC496B52C85BB1300EAA344 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				ACC496B32C85BB1300EAA344 /* FirebaseFirestore in Frameworks */,
 				ACC496B12C85BB1300EAA344 /* FirebaseDynamicLinks in Frameworks */,
@@ -85,6 +90,7 @@
 			children = (
 				ACAAEE402C85A93C00A27DF1 /* FirebaseAnalyticsTest */,
 				ACAAEE3F2C85A93C00A27DF1 /* Products */,
+				ACC496CD2C85DB5800EAA344 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 		ACAAEE402C85A93C00A27DF1 /* FirebaseAnalyticsTest */ = {
 			isa = PBXGroup;
 			children = (
+				ACC496CC2C85DAE400EAA344 /* Analytics */,
 				ACAAEE412C85A93C00A27DF1 /* FirebaseAnalyticsTestApp.swift */,
 				ACAAEE432C85A93C00A27DF1 /* ContentView.swift */,
 				ACC4969B2C85AFEE00EAA344 /* GoogleService-Info.plist */,
@@ -114,6 +121,22 @@
 				ACAAEE482C85A93D00A27DF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACC496CC2C85DAE400EAA344 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				ACC496D02C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		ACC496CD2C85DB5800EAA344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC496CE2C85DB5800EAA344 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +240,7 @@
 			files = (
 				ACAAEE442C85A93C00A27DF1 /* ContentView.swift in Sources */,
 				ACAAEE422C85A93C00A27DF1 /* FirebaseAnalyticsTestApp.swift in Sources */,
+				ACC496D12C85DB6E00EAA344 /* AnalyticsSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
