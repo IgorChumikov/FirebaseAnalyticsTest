@@ -11,19 +11,20 @@ import Firebase
 @main
 struct FirebaseAnalyticsTestApp: App {
     
+    // 1
     init() {
         FirebaseApp.configure()
     }
-    
-   // @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
+
+// 2
+// @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
 //class AppDelegate: NSObject, UIApplicationDelegate {
 //  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
