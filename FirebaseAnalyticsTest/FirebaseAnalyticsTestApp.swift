@@ -18,7 +18,7 @@ struct FirebaseAnalyticsTestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnalyticsSwiftUIView()
         }
     }
 }

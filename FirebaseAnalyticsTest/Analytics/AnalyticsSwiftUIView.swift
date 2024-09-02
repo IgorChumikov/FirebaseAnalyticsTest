@@ -30,15 +30,15 @@ final class AnalyticsManager {
     // ПРИМЕР ИСПОЛЬЗОВАНИЯ СОБЫТИЙ АНАЛИТИКИ
     // Рекомендуется использовать предопределённые события (например, AnalyticsEventSignUp),
     // так как они поддерживаются многими стандартными отчётами в Firebase Analytics.
-
+    
     // 1. AnalyticsEventLogin
     // Описание: Событие "Вход". Используется для отслеживания того, когда пользователь входит в приложение.
     // Пример использования: Вызовите это событие, когда пользователь успешно авторизуется.
-
+    
     // 2. AnalyticsEventSignUp
     // Описание: Событие "Регистрация". Отслеживает процесс регистрации нового пользователя.
     // Пример использования: Вызовите это событие, когда пользователь завершает процесс регистрации.
-
+    
     func logSignUpEvent(method: String) {
         logEvent(name: AnalyticsEventSignUp)
     }
@@ -50,8 +50,9 @@ struct AnalyticsSwiftUIView: View {
             Button("Click me") {
                 AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_ButtonClick")
             }
+            
             Button("Click me too") {
-                AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_SecondaryButtonClick", params: [
+                AnalyticsManager.shared.logEvent(name: "AnalyticsSwiftUIView_SecondClick", params: [
                     "screen_title" : "Hello World"
                 ])
             }
